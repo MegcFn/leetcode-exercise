@@ -1,23 +1,21 @@
 import java.util.*;
 
-public class question_3 {
+public class LC03 {
     class Solution {
         public int lengthOfLongestSubstring(String s) {
-            int head = 0,tail = 1;
-            HashSet<Character> set = new HashSet<Character>();
-            int answer = 0;
-            if(s.isEmpty()) return answer;
-            set.add(s.charAt(head));
-            while(tail < s.length()){
-                if (!set.add(s.charAt(tail))){
-                    answer = set.size() > answer? set.size() : answer;
-                    set.remove(s.charAt(head));
-                    head++;
-                }else{
-                    tail++;
+            if (s.length()==0) return 0;
+            HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+            int max = 0;
+            int left = 0;
+            for(int i = 0; i < s.length(); i ++){
+                if(map.containsKey(s.charAt(i))){
+                    left = Math.max(left,map.get(s.charAt(i)) + 1);
                 }
+                map.put(s.charAt(i),i);
+                max = Math.max(max,i-left+1);
             }
-            return answer;
+            return max;
+            
         }
     }
 }

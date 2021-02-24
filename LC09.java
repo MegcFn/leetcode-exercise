@@ -1,4 +1,4 @@
-public class question9 {
+public class LC09 {
     class Solution {
         public boolean isPalindrome(int x) {
             long num = 0;
