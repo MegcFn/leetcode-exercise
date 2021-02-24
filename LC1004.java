@@ -14,8 +14,8 @@ public class LC1004{
                     if(A[left++] == 0)
                         count--;
                 }
-                right++;
                 res = Math.max(res, right - left + 1);
+                right++;
             }
             return res;
         }

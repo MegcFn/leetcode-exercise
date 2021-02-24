@@ -1,4 +1,4 @@
-public class question_24 {
+public class LC24 {
     public class ListNode {
         int val;
         ListNode next;

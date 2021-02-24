@@ -1,6 +1,7 @@
 import java.util.Deque;
 import java.util.LinkedList;
-public class question_20 {
+
+public class LC20 {
     class Solution {
         public boolean isValid(String s) {
             if (s.length()%2 == 1 || s.isEmpty()){

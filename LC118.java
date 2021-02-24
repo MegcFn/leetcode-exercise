@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class question_118 {
+public class LC118 {
     class Solution{
         public List<List<Integer>> generate(int numRows) {
             List<List<Integer>> answer = new ArrayList<List<Integer>>();

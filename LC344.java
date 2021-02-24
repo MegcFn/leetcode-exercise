@@ -1,4 +1,4 @@
-public class question_344 {
+public class LC344 {
     class Solution {
         public void reverseString(char[] s) {
             int i = 0, j = s.length-1;
